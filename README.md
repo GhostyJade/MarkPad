@@ -1,2 +1,2 @@
-# MarkPad
-MarkPad - A Markdown Notepad
+# MarkDoc
+MarkDoc - A Markdown Notepad

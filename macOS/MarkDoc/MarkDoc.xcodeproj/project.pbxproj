@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525C067D27877CB0002BBC29 /* MarkPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C067C27877CB0002BBC29 /* MarkPadApp.swift */; };
+		525C067F27877CB0002BBC29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C067E27877CB0002BBC29 /* ContentView.swift */; };
+		525C068127877CB1002BBC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525C068027877CB1002BBC29 /* Assets.xcassets */; };
+		525C068427877CB1002BBC29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525C068327877CB1002BBC29 /* Preview Assets.xcassets */; };
+		525C068627877CB1002BBC29 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C068527877CB1002BBC29 /* Persistence.swift */; };
+		525C068927877CB1002BBC29 /* MarkPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 525C068727877CB1002BBC29 /* MarkPad.xcdatamodeld */; };
+		525C069427877CB1002BBC29 /* MarkDocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C069327877CB1002BBC29 /* MarkDocTests.swift */; };
+		525C069E27877CB1002BBC29 /* MarkDocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C069D27877CB1002BBC29 /* MarkDocUITests.swift */; };
+		525C06A027877CB1002BBC29 /* MarkDocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C069F27877CB1002BBC29 /* MarkDocUITestsLaunchTests.swift */; };
+		526A4A3D278A0F2B00FA4948 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A4A3C278A0F2B00FA4948 /* FileUtils.swift */; };
+		526A4A46278AF3A800FA4948 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 526A4A45278AF3A800FA4948 /* Ink */; };
+		526A4A49278AF46500FA4948 /* MarkdownWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A4A48278AF46500FA4948 /* MarkdownWebView.swift */; };
+		526A4A4B278AF60B00FA4948 /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A4A4A278AF60B00FA4948 /* PageViewModel.swift */; };
+		526A4A4D278B5B0800FA4948 /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A4A4C278B5B0800FA4948 /* DataUtils.swift */; };
+		526DA34A2788557500C4BBC1 /* MarkPadCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DA3492788557500C4BBC1 /* MarkPadCommands.swift */; };
+		52E8E07D278B68D4000E0CF5 /* MarkdownFileViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8E07C278B68D4000E0CF5 /* MarkdownFileViewer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		525C069027877CB1002BBC29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525C067127877CB0002BBC29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525C067827877CB0002BBC29;
+			remoteInfo = MarkPad;
+		};
+		525C069A27877CB1002BBC29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525C067127877CB0002BBC29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525C067827877CB0002BBC29;
+			remoteInfo = MarkPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		525C067927877CB0002BBC29 /* MarkDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		525C067C27877CB0002BBC29 /* MarkPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkPadApp.swift; sourceTree = "<group>"; };
+		525C067E27877CB0002BBC29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		525C068027877CB1002BBC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		525C068327877CB1002BBC29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		525C068527877CB1002BBC29 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		525C068827877CB1002BBC29 /* MarkPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarkPad.xcdatamodel; sourceTree = "<group>"; };
+		525C068A27877CB1002BBC29 /* MarkPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkPad.entitlements; sourceTree = "<group>"; };
+		525C068F27877CB1002BBC29 /* MarkDocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkDocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		525C069327877CB1002BBC29 /* MarkDocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDocTests.swift; sourceTree = "<group>"; };
+		525C069927877CB1002BBC29 /* MarkDocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkDocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		525C069D27877CB1002BBC29 /* MarkDocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDocUITests.swift; sourceTree = "<group>"; };
+		525C069F27877CB1002BBC29 /* MarkDocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		526A4A3C278A0F2B00FA4948 /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		526A4A48278AF46500FA4948 /* MarkdownWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownWebView.swift; sourceTree = "<group>"; };
+		526A4A4A278AF60B00FA4948 /* PageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
+		526A4A4C278B5B0800FA4948 /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
+		526DA3492788557500C4BBC1 /* MarkPadCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkPadCommands.swift; sourceTree = "<group>"; };
+		52E8E07C278B68D4000E0CF5 /* MarkdownFileViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownFileViewer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		525C067627877CB0002BBC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526A4A46278AF3A800FA4948 /* Ink in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525C068C27877CB1002BBC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525C069627877CB1002BBC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		525C067027877CB0002BBC29 = {
+			isa = PBXGroup;
+			children = (
+				525C067B27877CB0002BBC29 /* MarkDoc */,
+				525C069227877CB1002BBC29 /* MarkDocTests */,
+				525C069C27877CB1002BBC29 /* MarkDocUITests */,
+				525C067A27877CB0002BBC29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		525C067A27877CB0002BBC29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				525C067927877CB0002BBC29 /* MarkDoc.app */,
+				525C068F27877CB1002BBC29 /* MarkDocTests.xctest */,
+				525C069927877CB1002BBC29 /* MarkDocUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		525C067B27877CB0002BBC29 /* MarkDoc */ = {
+			isa = PBXGroup;
+			children = (
+				526A4A47278AF45400FA4948 /* Views */,
+				526A4A3B278A0F1C00FA4948 /* Utils */,
+				525C067C27877CB0002BBC29 /* MarkPadApp.swift */,
+				525C067E27877CB0002BBC29 /* ContentView.swift */,
+				525C068027877CB1002BBC29 /* Assets.xcassets */,
+				525C068527877CB1002BBC29 /* Persistence.swift */,
+				525C068A27877CB1002BBC29 /* MarkPad.entitlements */,
+				525C068727877CB1002BBC29 /* MarkPad.xcdatamodeld */,
+				525C068227877CB1002BBC29 /* Preview Content */,
+				526DA3492788557500C4BBC1 /* MarkPadCommands.swift */,
+				526A4A4A278AF60B00FA4948 /* PageViewModel.swift */,
+			);
+			path = MarkDoc;
+			sourceTree = "<group>";
+		};
+		525C068227877CB1002BBC29 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				525C068327877CB1002BBC29 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		525C069227877CB1002BBC29 /* MarkDocTests */ = {
+			isa = PBXGroup;
+			children = (
+				525C069327877CB1002BBC29 /* MarkDocTests.swift */,
+			);
+			path = MarkDocTests;
+			sourceTree = "<group>";
+		};
+		525C069C27877CB1002BBC29 /* MarkDocUITests */ = {
+			isa = PBXGroup;
+			children = (
+				525C069D27877CB1002BBC29 /* MarkDocUITests.swift */,
+				525C069F27877CB1002BBC29 /* MarkDocUITestsLaunchTests.swift */,
+			);
+			path = MarkDocUITests;
+			sourceTree = "<group>";
+		};
+		526A4A3B278A0F1C00FA4948 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				526A4A3C278A0F2B00FA4948 /* FileUtils.swift */,
+				526A4A4C278B5B0800FA4948 /* DataUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		526A4A47278AF45400FA4948 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				526A4A48278AF46500FA4948 /* MarkdownWebView.swift */,
+				52E8E07C278B68D4000E0CF5 /* MarkdownFileViewer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		525C067827877CB0002BBC29 /* MarkDoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525C06A327877CB1002BBC29 /* Build configuration list for PBXNativeTarget "MarkDoc" */;
+			buildPhases = (
+				525C067527877CB0002BBC29 /* Sources */,
+				525C067627877CB0002BBC29 /* Frameworks */,
+				525C067727877CB0002BBC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkDoc;
+			packageProductDependencies = (
+				526A4A45278AF3A800FA4948 /* Ink */,
+			);
+			productName = MarkPad;
+			productReference = 525C067927877CB0002BBC29 /* MarkDoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		525C068E27877CB1002BBC29 /* MarkDocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525C06A627877CB1002BBC29 /* Build configuration list for PBXNativeTarget "MarkDocTests" */;
+			buildPhases = (
+				525C068B27877CB1002BBC29 /* Sources */,
+				525C068C27877CB1002BBC29 /* Frameworks */,
+				525C068D27877CB1002BBC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525C069127877CB1002BBC29 /* PBXTargetDependency */,
+			);
+			name = MarkDocTests;
+			productName = MarkPadTests;
+			productReference = 525C068F27877CB1002BBC29 /* MarkDocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		525C069827877CB1002BBC29 /* MarkDocUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525C06A927877CB1002BBC29 /* Build configuration list for PBXNativeTarget "MarkDocUITests" */;
+			buildPhases = (
+				525C069527877CB1002BBC29 /* Sources */,
+				525C069627877CB1002BBC29 /* Frameworks */,
+				525C069727877CB1002BBC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525C069B27877CB1002BBC29 /* PBXTargetDependency */,
+			);
+			name = MarkDocUITests;
+			productName = MarkPadUITests;
+			productReference = 525C069927877CB1002BBC29 /* MarkDocUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		525C067127877CB0002BBC29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					525C067827877CB0002BBC29 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					525C068E27877CB1002BBC29 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 525C067827877CB0002BBC29;
+					};
+					525C069827877CB1002BBC29 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 525C067827877CB0002BBC29;
+					};
+				};
+			};
+			buildConfigurationList = 525C067427877CB0002BBC29 /* Build configuration list for PBXProject "MarkDoc" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 525C067027877CB0002BBC29;
+			packageReferences = (
+				526A4A44278AF3A800FA4948 /* XCRemoteSwiftPackageReference "Ink" */,
+			);
+			productRefGroup = 525C067A27877CB0002BBC29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				525C067827877CB0002BBC29 /* MarkDoc */,
+				525C068E27877CB1002BBC29 /* MarkDocTests */,
+				525C069827877CB1002BBC29 /* MarkDocUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		525C067727877CB0002BBC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525C068427877CB1002BBC29 /* Preview Assets.xcassets in Resources */,
+				525C068127877CB1002BBC29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525C068D27877CB1002BBC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525C069727877CB1002BBC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		525C067527877CB0002BBC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525C068927877CB1002BBC29 /* MarkPad.xcdatamodeld in Sources */,
+				526DA34A2788557500C4BBC1 /* MarkPadCommands.swift in Sources */,
+				525C068627877CB1002BBC29 /* Persistence.swift in Sources */,
+				526A4A3D278A0F2B00FA4948 /* FileUtils.swift in Sources */,
+				525C067F27877CB0002BBC29 /* ContentView.swift in Sources */,
+				525C067D27877CB0002BBC29 /* MarkPadApp.swift in Sources */,
+				52E8E07D278B68D4000E0CF5 /* MarkdownFileViewer.swift in Sources */,
+				526A4A4B278AF60B00FA4948 /* PageViewModel.swift in Sources */,
+				526A4A4D278B5B0800FA4948 /* DataUtils.swift in Sources */,
+				526A4A49278AF46500FA4948 /* MarkdownWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525C068B27877CB1002BBC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525C069427877CB1002BBC29 /* MarkDocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525C069527877CB1002BBC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525C069E27877CB1002BBC29 /* MarkDocUITests.swift in Sources */,
+				525C06A027877CB1002BBC29 /* MarkDocUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		525C069127877CB1002BBC29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525C067827877CB0002BBC29 /* MarkDoc */;
+			targetProxy = 525C069027877CB1002BBC29 /* PBXContainerItemProxy */;
+		};
+		525C069B27877CB1002BBC29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525C067827877CB0002BBC29 /* MarkDoc */;
+			targetProxy = 525C069A27877CB1002BBC29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		525C06A127877CB1002BBC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		525C06A227877CB1002BBC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		525C06A427877CB1002BBC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MarkPad/MarkPad.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MarkDoc/Preview Content\"";
+				DEVELOPMENT_TEAM = F6T9LJJA75;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostyjade.MarkDoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		525C06A527877CB1002BBC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MarkPad/MarkPad.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MarkDoc/Preview Content\"";
+				DEVELOPMENT_TEAM = F6T9LJJA75;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostyjade.MarkDoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		525C06A727877CB1002BBC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6T9LJJA75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostyjade.MarkPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkDoc.app/Contents/MacOS/MarkDoc";
+			};
+			name = Debug;
+		};
+		525C06A827877CB1002BBC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6T9LJJA75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostyjade.MarkPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkDoc.app/Contents/MacOS/MarkDoc";
+			};
+			name = Release;
+		};
+		525C06AA27877CB1002BBC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6T9LJJA75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostyjade.MarkPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MarkPad;
+			};
+			name = Debug;
+		};
+		525C06AB27877CB1002BBC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6T9LJJA75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostyjade.MarkPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MarkPad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		525C067427877CB0002BBC29 /* Build configuration list for PBXProject "MarkDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525C06A127877CB1002BBC29 /* Debug */,
+				525C06A227877CB1002BBC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525C06A327877CB1002BBC29 /* Build configuration list for PBXNativeTarget "MarkDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525C06A427877CB1002BBC29 /* Debug */,
+				525C06A527877CB1002BBC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525C06A627877CB1002BBC29 /* Build configuration list for PBXNativeTarget "MarkDocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525C06A727877CB1002BBC29 /* Debug */,
+				525C06A827877CB1002BBC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525C06A927877CB1002BBC29 /* Build configuration list for PBXNativeTarget "MarkDocUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525C06AA27877CB1002BBC29 /* Debug */,
+				525C06AB27877CB1002BBC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		526A4A44278AF3A800FA4948 /* XCRemoteSwiftPackageReference "Ink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Ink";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		526A4A45278AF3A800FA4948 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 526A4A44278AF3A800FA4948 /* XCRemoteSwiftPackageReference "Ink" */;
+			productName = Ink;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		525C068727877CB1002BBC29 /* MarkPad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				525C068827877CB1002BBC29 /* MarkPad.xcdatamodel */,
+			);
+			currentVersion = 525C068827877CB1002BBC29 /* MarkPad.xcdatamodel */;
+			path = MarkPad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 525C067127877CB0002BBC29 /* Project object */;
+}
